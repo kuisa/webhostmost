@@ -1,0 +1,92 @@
+
+google idx argo固定隧道
+nix=y uuid=da36bbc4-9acc-4c78-94d8-b04bb32b9555 vmpt=54321 agn=aaa.baozong.dpdns.org agk=eyJhIjoiNDJhNDRjMDc5MWExZmQ5NjZiODI0OWFjNGIxMGRhYTIiLCJ0IjoiMjNmNGUyNGItMDYwZi00MDRiLWI2MTUtN2I3M2Y5OGE5M2EwIiwicyI6Ik1tRXlaR0ZrT1RFdE9EQmtOUzAwTldVd0xXSTNZMk10T1dJMU1ERXhaR0psT0RjMSJ9 bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+cloudflared.exe service install 
+eyJhIjoiNDJhNDRjMDc5MWExZmQ5NjZiODI0OWFjNGIxMGRhYTIiLCJ0IjoiMjNmNGUyNGItMDYwZi00MDRiLWI2MTUtN2I3M2Y5OGE5M2EwIiwicyI6Ik1tRXlaR0ZrT1RFdE9EQmtOUzAwTldVd0xXSTNZMk10T1dJMU1ERXhaR0psT0RjMSJ9
+aaa.baozong.dpdns.org
+
+永久免费VPS容器，2.5GHz1G内存10GB存储，可选亚马逊 韩国/孟买/美国/德国机房
+nix=y uuid=da36bbc4-9acc-4c78-94d8-b04bb32b9555 vmpt=54321 agn=aaa.baozong.dpdns.org agk=eyJhIjoiNDJhNDRjMDc5MWExZmQ5NjZiODI0OWFjNGIxMGRhYTIiLCJ0IjoiMjNmNGUyNGItMDYwZi00MDRiLWI2MTUtN2I3M2Y5OGE5M2EwIiwicyI6Ik1tRXlaR0ZrT1RFdE9EQmtOUzAwTldVd0xXSTNZMk10T1dJMU1ERXhaR0psT0RjMSJ9 bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+
+https://www.mebi.me/1583
+https://ide.goorm.io/my/dashboard#/containers
+15553523757@163.com  370682ASDasd110.
+town95@qq.com  370682ASDasd110.
+白嫖小主机1 SSH端口2323
+https://www.webhostmost.com/free-web-hosting
+15553523757@163.com  Tangshuai886   芬兰    Username: xlswatbz Password: 6Dfd3v-J.GrI38     server6.webhostmost.com
+town95@qq.com  Tangshuai886      	美国    Username: gytfkfnd Password: EXK4Tm2*v*z81y    server8.webhostmost.com
+zz990027566@gmail.com  Tangshuai886 比利时  Username: biqjkfsx   Password: zq6!uO22AXpE2(   server5.webhostmost.com
+townt@qq.com  Tangshuai88           印度    Username: dketkcvw     Password: [JYl@8co86tUG3  server3.webhostmost.com
+tang@103hqh.onmicrosoft.com Tangshuai9527   日本  Username: hgpiqxbn Password: 4FLr(gmBi;4Y78 server7.webhostmost.com 
+
+finland.baozong.dpdns.org
+ 
+
+新脚本自带混淆https://obfuscator.io/
+TG通知
+7674414826
+7834090776:AAEXaWdGGL24FW4PCqGLKtY558gas5HwvQQ
+15553523757@163.com:Tangshuai886 town95@qq.com:Tangshuai886
+ 
+curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh be.baozong.dpdns.org
+
+https://finland.baozong.dpdns.org/sub
+ 
+https://server6.webhostmost.com:2222/evo/user/plugins/nodejs_selector#/applications
+domains/wfde.baozong.dpdns.org/public_html
+
+美国
+dmxlc3M6Ly9kNmQyODYwYy01Y2JmLTRjZTAtYWMzMC04NWJlOWVmZjM1MzlAd3d3LnZpc2EuY29tLnR3OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT11c2EuYmFvem9uZy5kcGRucy5vcmcmdHlwZT13cyZob3N0PXVzYS5iYW96b25nLmRwZG5zLm9yZyZwYXRoPSUyRiNWbHMtVVMtV2ViLWhvc3QtbW9zdC1hc24tMQ==
+
+芬兰
+dmxlc3M6Ly8wNzZjYjgzMC00ZjlmLTRhMjQtYjEyOS1lNmNmOTk2N2YxMzVAd3d3LnZpc2EuY29tLnR3OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1maW5sYW5kLmJhb3pvbmcuZHBkbnMub3JnJnR5cGU9d3MmaG9zdD1maW5sYW5kLmJhb3pvbmcuZHBkbnMub3JnJnBhdGg9JTJGI1Zscy1VUy1XZWItaG9zdC1tb3N0LWFzbi0x
+
+比利时
+dmxlc3M6Ly9hNjMxYWE3YS1hODgzLTRhZTUtYTNkYi0xNWJiODg0OTNmNGFAd3d3LnZpc2EuY29tLnR3OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1iZS5iYW96b25nLmRwZG5zLm9yZyZ0eXBlPXdzJmhvc3Q9YmUuYmFvem9uZy5kcGRucy5vcmcmcGF0aD0lMkYjVmxzLVVTLVdlYi1ob3N0LW1vc3QtYXNuLTE=
+
+印度
+dmxlc3M6Ly8xM2Y3MzllNS05YzlmLTQxMWMtODJhZi1lMzA4Y2EyNTQ2MGZAd3d3LnZpc2EuY29tLnR3OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1pbi5iYW96b25nLmRwZG5zLm9yZyZ0eXBlPXdzJmhvc3Q9aW4uYmFvem9uZy5kcGRucy5vcmcmcGF0aD0lMkYjVmxzLVVTLVdlYi1ob3N0LW1vc3QtYXNuLTE=
+
+日本
+dmxlc3M6Ly81YTY1YTEyOC0zMWQ5LTQ3MDMtODFkNS1hYjFmMjc2YTU5MjlAd3d3LnZpc2EuY29tLnR3OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmc2VjdXJpdHk9dGxzJnNuaT1qYXBhbi5iYW96b25nLmRwZG5zLm9yZyZ0eXBlPXdzJmhvc3Q9amFwYW4uYmFvem9uZy5kcGRucy5vcmcmcGF0aD0lMkYjVmxzLUlOLVdlYi1ob3N0LW1vc3QtYXNuLTE=
+
+白嫖小主机2
+https://web.freecloud.ltd/
+https://web.freecloud.ltd/index.php?rp=/store/de-directadmin
+15553523757@163.com  Tangshuai886 德国 用户名: tqydqikr 密码: q7gG8@Mi#n6TA1  端口: 53667 或 22  主机: dade1.hostypanel.com
+town95@qq.com  Tangshuai886   美国  用户名: xgpaipog 密码: bntPTO-(k34G23 端口: 53667 或 22 主机: dany1.hostypanel.com
+townt@qq.com  Tangshuai886 新加坡 主机: dasg1.hostypanel.com 端口: 53667 或 22 用户名: ngzxbbsv 密码: 	
+curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh wfde.baozong.dpdns.org
+curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh wfusa.baozong.dpdns.org
+curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh wfsin.baozong.dpdns.org
+
+https://waifly.com/  法国游戏机
+https://dash.waifly.com/servers.html
+Panel connection information:
+Email: zz990027566@gmail.com
+Password: iRMh.%Io*ikb
+
+15553523757@163.com  Tangshuai886
+^3ZUEMARpszQ
+
+
+免费域名eu.org详情见密码本
+https://nic.ua/en/signup
+
+
+哪吒面板
+https://github.com/settings/applications/3013643
+Client ID
+Ov23livIAaYMgYgHP9h6
+Client secrets
+5335c50d865d7d43bc65368976d90e4927ae6fc0
+https://github.com/settings/tokens
+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
+
+
+小鸡 洛杉矶 东京 伦敦
+https://www.lade.io/dashboard
+https://github.com/byJoey/ladefree
+15553523757@163.com
+Tangshuai886
