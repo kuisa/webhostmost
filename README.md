@@ -29,4 +29,5 @@ curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.
 * js混肴地址：https://obfuscator.io
 * domains/usa.baozong.dpdns.org/public_html
 * index.js
+* https://usa.baozong.dpdns.org/sub
 
