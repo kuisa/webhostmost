@@ -33,6 +33,7 @@ curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.
 
 美国
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh us.baozong.dpdns.org
+
 cloudlinux-selector create --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
 cd /home/gytfkfnd/domains/us.baozong.dpdns.org/public_html
 /home/gytfkfnd/nodevenv/domains/us.baozong.dpdns.org/public_html/22/bin/npm install
@@ -42,6 +43,7 @@ cloudlinux-selector create --json --interpreter=node.js --user=gytfkfnd --app-ro
 
 荷兰
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh fin.baozong.dpdns.org
+
 cloudlinux-selector create --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/fin.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
 cd /home/xlswatbz/domains/fin.baozong.dpdns.org/public_html
 /home/xlswatbz/nodevenv/domains/fin.baozong.dpdns.org/public_html/22/bin/npm install
@@ -51,6 +53,7 @@ cloudlinux-selector create --json --interpreter=node.js --user=xlswatbz --app-ro
 
 比利时
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh be.baozong.dpdns.org
+
 cloudlinux-selector create --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
 cd /home/biqjkfsx/domains/be.baozong.dpdns.org/public_html
 /home/biqjkfsx/nodevenv/domains/be.baozong.dpdns.org/public_html/22/bin/npm install
@@ -60,6 +63,7 @@ cloudlinux-selector create --json --interpreter=node.js --user=biqjkfsx --app-ro
 
 印度
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh in.baozong.dpdns.org
+
 cloudlinux-selector create --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/in.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
 cd /home/dketkcvw/domains/in.baozong.dpdns.org/public_html
 /home/dketkcvw/nodevenv/domains/in.baozong.dpdns.org/public_html/22/bin/npm install
@@ -69,6 +73,7 @@ cloudlinux-selector create --json --interpreter=node.js --user=dketkcvw --app-ro
 
 日本
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh japan.baozong.dpdns.org
+
 cloudlinux-selector create --json --interpreter=nodejs --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
 cd /home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html
 /home/hgpiqxbn/nodevenv/domains/japan.baozong.dpdns.org/public_html/22/bin/npm install
