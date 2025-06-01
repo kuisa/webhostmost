@@ -29,5 +29,14 @@ curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.
 * js混肴地址：https://obfuscator.io
 * domains/usa.baozong.dpdns.org/public_html
 * index.js
-* https://usa.baozong.dpdns.org/sub
+* https://us.baozong.dpdns.org/sub
+* 美国
+curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh us.baozong.dpdns.org
+cloudlinux-selector create --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
+cd /home/gytfkfnd/domains/us.baozong.dpdns.org/public_html
+/home/gytfkfnd/nodevenv/domains/us.baozong.dpdns.org/public_html/22/bin/npm install
+ls /home/gytfkfnd/.npm/_logs
+rm -f /home/gytfkfnd/.npm/_logs/*.log
+cloudlinux-selector create --json --interpreter=node.js --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html [EOF]
+
 
