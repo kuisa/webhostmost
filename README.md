@@ -30,7 +30,8 @@ curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.
 * domains/usa.baozong.dpdns.org/public_html
 * index.js
 * https://us.baozong.dpdns.org/sub
- 美国
+
+美国
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh us.baozong.dpdns.org
 cloudlinux-selector create --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
 cd /home/gytfkfnd/domains/us.baozong.dpdns.org/public_html
