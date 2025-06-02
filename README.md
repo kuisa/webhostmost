@@ -51,7 +51,7 @@ ls /home/gytfkfnd/.npm/_logs
 rm -f /home/gytfkfnd/.npm/_logs/*.log
 ```
 ```bash 
-cloudlinux-selector destroy --json --interpreter=node.js --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html [EOF]
+cloudlinux-selector destroy --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html 
 ```
 
 荷兰
@@ -62,7 +62,7 @@ cd /home/xlswatbz/domains/fin.baozong.dpdns.org/public_html
 /home/xlswatbz/nodevenv/domains/fin.baozong.dpdns.org/public_html/22/bin/npm install
 ls /home/xlswatbz/.npm/_logs
 rm -f /home/xlswatbz/.npm/_logs/*.log
-cloudlinux-selector destroy --json --interpreter=node.js --user=xlswatbz --app-root=/home/xlswatbz/domains/us.baozong.dpdns.org/public_html [EOF]
+cloudlinux-selector destroy --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/us.baozong.dpdns.org/public_html 
 
 比利时
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh be.baozong.dpdns.org
@@ -72,7 +72,7 @@ cd /home/biqjkfsx/domains/be.baozong.dpdns.org/public_html
 /home/biqjkfsx/nodevenv/domains/be.baozong.dpdns.org/public_html/22/bin/npm install
 ls /home/biqjkfsx/.npm/_logs
 rm -f /home/biqjkfsx/.npm/_logs/*.log
-cloudlinux-selector destroy --json --interpreter=node.js --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html [EOF]
+cloudlinux-selector destroy --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html 
 
 印度
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh in.baozong.dpdns.org
@@ -82,7 +82,7 @@ cd /home/dketkcvw/domains/in.baozong.dpdns.org/public_html
 /home/dketkcvw/nodevenv/domains/in.baozong.dpdns.org/public_html/22/bin/npm install
 ls /home/dketkcvw/.npm/_logs
 rm -f /home/dketkcvw/.npm/_logs/*.log
-cloudlinux-selector destroy --json --interpreter=node.js --user=dketkcvw --app-root=/home/dketkcvw/domains/be.baozong.dpdns.org/public_html [EOF]
+cloudlinux-selector destroy --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/be.baozong.dpdns.org/public_html
 
 日本
 ```bash 
@@ -100,5 +100,5 @@ ls /home/hgpiqxbn/.npm/_logs
 rm -f /home/hgpiqxbn/.npm/_logs/*.log
 ```
 ```bash 
-cloudlinux-selector destroy --json --interpreter=node.js --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html [EOF]
+cloudlinux-selector destroy --json --interpreter=nodejs --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html 
 ```
