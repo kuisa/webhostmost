@@ -1,6 +1,7 @@
 # 安装  
 
-> **注意：** 第一步，记得把命令中的 `yourdomain` 改为你真实的域名 启动node.js脚本配置UUID和域名
+> **注意：**
+第一步，记得把命令中的 `yourdomain` 改为你真实的域名 启动node.js脚本配置UUID和域名
 ```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
 ```
