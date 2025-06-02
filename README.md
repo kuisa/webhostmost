@@ -72,11 +72,20 @@ rm -f /home/dketkcvw/.npm/_logs/*.log
 cloudlinux-selector create --json --interpreter=node.js --user=dketkcvw --app-root=/home/dketkcvw/domains/be.baozong.dpdns.org/public_html [EOF]
 
 日本
+```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh japan.baozong.dpdns.org
-
+```
+```bash 
 cloudlinux-selector create --json --interpreter=nodejs --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
+```
+```bash 
 cd /home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html
 /home/hgpiqxbn/nodevenv/domains/japan.baozong.dpdns.org/public_html/22/bin/npm install
+```
+```bash 
 ls /home/hgpiqxbn/.npm/_logs
 rm -f /home/hgpiqxbn/.npm/_logs/*.log
+```
+```bash 
 cloudlinux-selector create --json --interpreter=node.js --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html [EOF]
+```
