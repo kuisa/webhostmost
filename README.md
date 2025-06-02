@@ -5,12 +5,6 @@
 ```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
 ```
-第二步 ，配置node.js环境 启动npm
-```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/whm.sh > whm.sh && chmod +x whm.sh && ./whm.sh
-```
-
-
 # Node-ws说明
 用于node环境的玩具和容器，基于node三方ws库，集成哪吒探针服务，可自行添加环境变量
 * PaaS 平台设置的环境变量
@@ -55,34 +49,62 @@ cloudlinux-selector destroy --json --interpreter=nodejs --user=gytfkfnd --app-ro
 ```
 
 荷兰
+```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh fin.baozong.dpdns.org
-
+```
+```bash 
 cloudlinux-selector create --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/fin.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
+```
+```bash 
 cd /home/xlswatbz/domains/fin.baozong.dpdns.org/public_html
 /home/xlswatbz/nodevenv/domains/fin.baozong.dpdns.org/public_html/22/bin/npm install
+```
+```bash 
 ls /home/xlswatbz/.npm/_logs
 rm -f /home/xlswatbz/.npm/_logs/*.log
-cloudlinux-selector destroy --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/us.baozong.dpdns.org/public_html 
+```
+```bash 
+cloudlinux-selector destroy --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/us.baozong.dpdns.org/public_html
+```
 
 比利时
+```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh be.baozong.dpdns.org
-
+```
+```bash 
 cloudlinux-selector create --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
+```
+```bash 
 cd /home/biqjkfsx/domains/be.baozong.dpdns.org/public_html
 /home/biqjkfsx/nodevenv/domains/be.baozong.dpdns.org/public_html/22/bin/npm install
+```
+```bash 
 ls /home/biqjkfsx/.npm/_logs
 rm -f /home/biqjkfsx/.npm/_logs/*.log
-cloudlinux-selector destroy --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html 
+```
+```bash 
+cloudlinux-selector destroy --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html
+```
+
 
 印度
+```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh in.baozong.dpdns.org
-
+```
+```bash 
 cloudlinux-selector create --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/in.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
+```
+```bash 
 cd /home/dketkcvw/domains/in.baozong.dpdns.org/public_html
 /home/dketkcvw/nodevenv/domains/in.baozong.dpdns.org/public_html/22/bin/npm install
+```
+```bash 
 ls /home/dketkcvw/.npm/_logs
 rm -f /home/dketkcvw/.npm/_logs/*.log
+```
+```bash 
 cloudlinux-selector destroy --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/be.baozong.dpdns.org/public_html
+```
 
 日本
 ```bash 
