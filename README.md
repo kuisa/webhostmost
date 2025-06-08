@@ -103,7 +103,7 @@ ls /home/dketkcvw/.npm/_logs
 rm -f /home/dketkcvw/.npm/_logs/*.log
 ```
 ```bash 
-cloudlinux-selector destroy --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/be.baozong.dpdns.org/public_html
+cloudlinux-selector destroy --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/in.baozong.dpdns.org/public_html
 ```
 
 日本
