@@ -48,7 +48,7 @@ rm -f /home/gytfkfnd/.npm/_logs/*.log
 cloudlinux-selector destroy --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html 
 ```
 
-荷兰
+芬兰
 ```bash 
 curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh fin.baozong.dpdns.org
 ```
@@ -64,7 +64,7 @@ ls /home/xlswatbz/.npm/_logs
 rm -f /home/xlswatbz/.npm/_logs/*.log
 ```
 ```bash 
-cloudlinux-selector destroy --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/us.baozong.dpdns.org/public_html
+cloudlinux-selector destroy --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/fin.baozong.dpdns.org/public_html
 ```
 
 比利时
