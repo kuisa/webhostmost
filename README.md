@@ -1,5 +1,11 @@
 # 安装  
 
+一键重建脚本
+```bash 
+curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/deploy.sh > deploy.sh && chmod +x deploy.sh && ./deploy.sh  
+
+```
+
 > **注意：**
 第一步，记得把命令中的 `yourdomain` 改为你真实的域名 启动node.js脚本配置UUID和域名
 ```bash 
