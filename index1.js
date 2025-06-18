@@ -12,7 +12,11 @@ const NEZHA_PORT = process.env.NEZHA_PORT || '';           // 哪吒v1没有此�
 const NEZHA_KEY = process.env.NEZHA_KEY || '';             // v1的NZ_CLIENT_SECRET或v0的agent端口                
 const DOMAIN = process.env.DOMAIN || '1234.abc.com';       // 填写项目域名或已反代的域名，不带前缀，建议填已反代的域名
 const AUTO_ACCESS = process.env.AUTO_ACCESS || true;      // 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量
-const SUB_PATH = process.env.SUB_PATH || 'sub';            // 获取节点的订阅路径
+  // 获取节点的订阅路径
+const pad = n => n.toString().padStart(2, '0');
+const date = new Date();
+const SUB_PATH = `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}`;   // 获取节点的订阅路径
+        
 const NAME = process.env.NAME || 'Vls';                    // 节点名称
 const PORT = process.env.PORT || 3000;                     // http和ws服务端口
 
