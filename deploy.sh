@@ -39,7 +39,7 @@ echo "🗑️ 尝试销毁旧 Node.js 环境（若存在）"
   --app-root="$APP_ROOT" || echo "⚠️ 旧环境可能不存在，跳过销毁"
 
 echo "📥 下载并执行 setup.sh 初始化"
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh -o setup.sh
+curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/setup.sh -o setup.sh
 chmod +x setup.sh
 ./setup.sh "$DOMAIN"
 
