@@ -1,6 +1,6 @@
 # 安装  
 
-一键重建脚本
+一键重建脚本(域名/UUID 访问 )
 ```bash 
 curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy.sh > deploy.sh && chmod +x deploy.sh && ./deploy.sh  
 
