@@ -1,5 +1,7 @@
 设置自启动检查脚本start_ttyd.sh
+
 crontab -e
+
 */1 * * * * /home/nopamzjv/domains/au.baozong.dpdns.org/public_html/start_ttyd.sh >> /home/nopamzjv/ttyd_cron.log 2>&1
 
 */2 * * * * /home/xlswatbz/domains/fin.baozong.dpdns.org/public_html/start_ttyd.sh
