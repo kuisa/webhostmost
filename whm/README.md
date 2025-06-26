@@ -2,7 +2,9 @@
 crontab -e
 */1 * * * * /home/nopamzjv/domains/au.baozong.dpdns.org/public_html/start_ttyd.sh >> /home/nopamzjv/ttyd_cron.log 2>&1
 
+*/2 * * * * /home/xlswatbz/domains/fin.baozong.dpdns.org/public_html/start_ttyd.sh
 
+*/1 * * * * cd /home/xlswatbz/public_html && /home/xlswatbz/cron.sh
 
 ## 使用方法
 
