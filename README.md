@@ -54,76 +54,7 @@ rm -f /home/gytfkfnd/.npm/_logs/*.log
 cloudlinux-selector destroy --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html 
 ```
 
-芬兰
-```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh fin.baozong.dpdns.org
-```
-```bash 
-cloudlinux-selector create --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/fin.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
-```
-```bash 
-cd /home/xlswatbz/domains/fin.baozong.dpdns.org/public_html
-/home/xlswatbz/nodevenv/domains/fin.baozong.dpdns.org/public_html/22/bin/npm install
-```
-```bash 
-ls /home/xlswatbz/.npm/_logs
-rm -f /home/xlswatbz/.npm/_logs/*.log
-```
-```bash 
-cloudlinux-selector destroy --json --interpreter=nodejs --user=xlswatbz --app-root=/home/xlswatbz/domains/fin.baozong.dpdns.org/public_html
-```
 
-比利时
-```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh be.baozong.dpdns.org
-```
-```bash 
-cloudlinux-selector create --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
-```
-```bash 
-cd /home/biqjkfsx/domains/be.baozong.dpdns.org/public_html
-/home/biqjkfsx/nodevenv/domains/be.baozong.dpdns.org/public_html/22/bin/npm install
-```
-```bash 
-ls /home/biqjkfsx/.npm/_logs
-rm -f /home/biqjkfsx/.npm/_logs/*.log
-```
-```bash 
-cloudlinux-selector destroy --json --interpreter=nodejs --user=biqjkfsx --app-root=/home/biqjkfsx/domains/be.baozong.dpdns.org/public_html
-```
-
-
-印度
-```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh in.baozong.dpdns.org
-```
-```bash 
-cloudlinux-selector create --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/in.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
-```
-```bash 
-cd /home/dketkcvw/domains/in.baozong.dpdns.org/public_html
-/home/dketkcvw/nodevenv/domains/in.baozong.dpdns.org/public_html/22/bin/npm install
-```
-```bash 
-ls /home/dketkcvw/.npm/_logs
-rm -f /home/dketkcvw/.npm/_logs/*.log
-```
-```bash 
-cloudlinux-selector destroy --json --interpreter=nodejs --user=dketkcvw --app-root=/home/dketkcvw/domains/in.baozong.dpdns.org/public_html
-```
-
-日本
-```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh japan.baozong.dpdns.org
-```
-```bash 
-cloudlinux-selector create --json --interpreter=nodejs --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
-```
-```bash 
-cd /home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html
-/home/hgpiqxbn/nodevenv/domains/japan.baozong.dpdns.org/public_html/22/bin/npm install
-```
-```bash 
 ls /home/hgpiqxbn/.npm/_logs
 rm -f /home/hgpiqxbn/.npm/_logs/*.log
 ```
