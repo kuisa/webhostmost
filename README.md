@@ -54,10 +54,3 @@ rm -f /home/gytfkfnd/.npm/_logs/*.log
 cloudlinux-selector destroy --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html 
 ```
 
-
-ls /home/hgpiqxbn/.npm/_logs
-rm -f /home/hgpiqxbn/.npm/_logs/*.log
-```
-```bash 
-cloudlinux-selector destroy --json --interpreter=nodejs --user=hgpiqxbn --app-root=/home/hgpiqxbn/domains/japan.baozong.dpdns.org/public_html 
-```
