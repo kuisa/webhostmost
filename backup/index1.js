@@ -21,6 +21,7 @@ const NAME = process.env.NAME || 'Vls';                    // 节点名称
 const PORT = process.env.PORT || 3000;                     // http和ws服务端口
 const url = require('url');                                // exec
 
+
 const metaInfo = execSync(
   'curl -s https://speed.cloudflare.com/meta | awk -F\\" \'{print $26"-"$18}\' | sed -e \'s/ /_/g\'',
   { encoding: 'utf-8' }
@@ -65,8 +66,11 @@ const httpServer = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello, World\n');
   } else if (req.url === `/${UUID}`) {
-    const vlessURL = `vless://${UUID}@www.visa.com.tw:443?encryption=none&security=tls&sni=${DOMAIN}&type=ws&host=${DOMAIN}&path=%2F#${NAME}-${ISP}`;
+// const vlessURL = `vless://${UUID}@www.visa.com.tw:443?encryption=none&security=tls&sni=${DOMAIN}&type=ws&host=${DOMAIN}&path=%2F#${NAME}-${ISP}`;
+const subdomain = DOMAIN.split('.')[0]; // 取域名前缀
+const vlessURL = `vless://${UUID}@www.visa.com.tw:443?encryption=none&security=tls&sni=${DOMAIN}&type=ws&host=${DOMAIN}&path=%2F#${subdomain}-${ISP}`;
 
+    
     const base64Content = Buffer.from(vlessURL).toString('base64');
 
     res.writeHead(200, { 'Content-Type': 'text/plain' });
