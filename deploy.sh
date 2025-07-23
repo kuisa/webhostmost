@@ -32,9 +32,9 @@ if [ "$input" != "n" ]; then
   [ -z "$nezha_key" ] && { echo "❌ NEZHA_KEY 不能为空"; exit 1; }
 fi
 
-# ========== 基础路径设置 ==========
+# ========== 基础路径设置 22.16.0 20.19.2 ==========
 APP_ROOT="/home/$USERNAME/domains/$DOMAIN/public_html"
-NODE_VERSION="22.14.0"
+NODE_VERSION="22.16.0"
 NODE_ENV_VERSION="22"
 STARTUP_FILE="index.js"
 NODE_VENV_BIN="/home/$USERNAME/nodevenv/domains/$DOMAIN/public_html/$NODE_ENV_VERSION/bin"
