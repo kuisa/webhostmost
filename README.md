@@ -11,6 +11,11 @@ curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy.sh > 
 ```bash 
 curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/backup/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
 ```
+
+cloudlinux-selector get --interpreter=nodejs --user=ucjsgufh --json
+cloudlinux-selector create --json --interpreter=nodejs --user=ucjsgufh --app-root=public_html --app-uri=/ --version=22.16.0 --app-mode=Development --startup-file=app.js
+cloudlinux-selector destroy --json --interpreter=nodejs  --user=ucjsgufh --app-root=public_html
+
 # Node-ws说明
 用于node环境的玩具和容器，基于node三方ws库，集成哪吒探针服务，可自行添加环境变量
 * PaaS 平台设置的环境变量
