@@ -13,7 +13,9 @@ curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/backup/setup
 ```
 
 cloudlinux-selector get --interpreter=nodejs --user=ucjsgufh --json
+
 cloudlinux-selector create --json --interpreter=nodejs --user=ucjsgufh --app-root=public_html --app-uri=/ --version=22.16.0 --app-mode=Development --startup-file=app.js
+
 cloudlinux-selector destroy --json --interpreter=nodejs  --user=ucjsgufh --app-root=public_html
 
 # Node-ws说明
