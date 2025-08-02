@@ -9,7 +9,7 @@ curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy.sh > 
 > **注意：**
 第一步，记得把命令中的 `yourdomain` 改为你真实的域名 启动node.js脚本配置UUID和域名
 ```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
+curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/backup/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
 ```
 # Node-ws说明
 用于node环境的玩具和容器，基于node三方ws库，集成哪吒探针服务，可自行添加环境变量
@@ -37,7 +37,7 @@ curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.
 
 美国
 ```bash 
-curl -Ls https://raw.githubusercontent.com/town95/node-ws/main/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh us.baozong.dpdns.org
+curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/backup/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh us.baozong.dpdns.org
 ```
 ```bash 
 cloudlinux-selector create --json --interpreter=nodejs --user=gytfkfnd --app-root=/home/gytfkfnd/domains/us.baozong.dpdns.org/public_html --app-uri=/ --version=22.14.0 --app-mode=Production --startup-file=index.js
