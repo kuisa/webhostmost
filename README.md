@@ -2,7 +2,7 @@
 
 一键重建脚本(域名/UUID 访问 )
 ```bash 
-curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy2.sh > deploy2.sh && chmod +x deploy2.sh && ./deploy2.sh  
+curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy1.sh > deploy1.sh && chmod +x deploy1.sh && ./deploy1.sh  
 
 ```
 
