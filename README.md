@@ -2,15 +2,10 @@
 
 一键重建脚本(域名/UUID 访问 )
 ```bash 
-curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy.sh > deploy.sh && chmod +x deploy.sh && ./deploy.sh  
+curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/deploy2.sh > deploy2.sh && chmod +x deploy2.sh && ./deploy2.sh  
 
 ```
 
-> **注意：**
-第一步，记得把命令中的 `yourdomain` 改为你真实的域名 启动node.js脚本配置UUID和域名
-```bash 
-curl -Ls https://raw.githubusercontent.com/TownMarshal/node-ws/main/backup/setup.sh > setup.sh && chmod +x setup.sh && ./setup.sh yourdomain
-```
 
 cloudlinux-selector get --interpreter=nodejs --user=ucjsgufh --json
 
