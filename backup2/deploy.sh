@@ -1,56 +1,25 @@
 #!/bin/bash
 set -e
 
-# ========== 颜色定义 ==========
-GREEN="\033[1;32m"
-CYAN="\033[1;36m"
-YELLOW="\033[1;33m"
-MAGENTA="\033[1;35m"
-RED="\033[1;31m"
-RESET="\033[0m"
-
 # ========== 第一步：自动检测用户名 ==========
-cd ~ || { echo -e "${RED}❌ 无法切换到主目录${RESET}"; exit 1; }
+cd ~ || { echo "❌ 无法切换到主目录"; exit 1; }
 USERNAME="$(basename "$PWD")"
-echo -e "${CYAN}🧑 当前用户名:${RESET} ${YELLOW}$USERNAME${RESET}"
+echo "🧑 当前用户名: $USERNAME"
 
-# ========== 第二步：自动检测最新域名目录，失败允许手动输入 ==========
-DOMAIN_PATH=$(ls -1td /home/"$USERNAME"/domains/*/ 2>/dev/null | head -n 1)
-
-if [ -z "$DOMAIN_PATH" ]; then
-    echo -e "${YELLOW}⚠️ 未检测到域名目录，请手动输入${RESET}"
-    read -p "请输入域名目录名称（如 be.yust.eu.org）: " DOMAIN
-    DOMAIN_PATH="/home/$USERNAME/domains/$DOMAIN"
-    mkdir -p "$DOMAIN_PATH"
-else
-    DOMAIN=$(basename "$DOMAIN_PATH")
-    echo -e "${CYAN}🌐 自动检测到最新域名:${RESET} ${YELLOW}$DOMAIN${RESET}"
-fi
-
+# ========== 第二步：输入域名 ==========
+read -p "请输入绑定的域名（如 us.example.com）: " DOMAIN
 if [ -z "$DOMAIN" ]; then
-    read -p "请输入域名名称（如 be.yust.eu.org）: " DOMAIN
-    DOMAIN_PATH="/home/$USERNAME/domains/$DOMAIN"
-    mkdir -p "$DOMAIN_PATH"
+    echo "❌ 域名不能为空，脚本退出。"
+    exit 1
 fi
 
-# ========== 第三步：输入或自动生成 UUID ==========
-while true; do
-    read -p "请输入 UUID（回车自动生成）: " UUID
-    if [ -z "$UUID" ]; then
-        if command -v uuidgen >/dev/null 2>&1; then
-            UUID=$(uuidgen)
-        else
-            UUID=$(cat /proc/sys/kernel/random/uuid)
-        fi
-        echo -e "${YELLOW}⚙️ 自动生成 UUID:${RESET} ${MAGENTA}$UUID${RESET}"
-        break
-    elif [[ "$UUID" =~ ^[a-fA-F0-9-]{36}$ ]]; then
-        echo -e "${CYAN}✅ 使用手动输入的 UUID: ${MAGENTA}$UUID${RESET}"
-        break
-    else
-        echo -e "${RED}❌ UUID 格式不正确，请重新输入${RESET}"
-    fi
-done
+# ========== 第三步：输入 UUID ==========
+read -p "请输入 UUID（用于 WebSocket 鉴权）: " UUID
+if [ -z "$UUID" ]; then
+    echo "❌ UUID 不能为空，脚本退出。"
+    exit 1
+fi
+
 # ========== 探针可选项 ==========
 read -p "是否安装哪吒探针？[y/n] [n]: " input
 input=${input:-n}
@@ -170,4 +139,3 @@ echo "📡 本地监听端口: $RANDOM_PORT"
 
 # ========== 自毁脚本 ==========
 rm -- "$0"
-
