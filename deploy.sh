@@ -79,8 +79,8 @@ cd "$APP_ROOT" || { echo "❌ 切换目录失败"; exit 1; }
 
 # ========== 下载主程序 ==========
 echo "📥 下载 index.js 和 cron.sh,下载ttyd"
-curl -s -o "$APP_ROOT/index.js" "https://raw.githubusercontent.com/TownMarshal/node-ws/main/index.js"
-curl -s -o "/home/$USERNAME/cron.sh" "https://raw.githubusercontent.com/TownMarshal/node-ws/main/cron.sh"
+curl -s -o "$APP_ROOT/index.js" "https://raw.githubusercontent.com/kuisa/webhostmost/main/index.js"
+curl -s -o "/home/$USERNAME/cron.sh" "https://raw.githubusercontent.com/kuisa/webhostmost/main/cron.sh"
 chmod +x /home/$USERNAME/cron.sh
 
 # wget "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
