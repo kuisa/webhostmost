@@ -88,6 +88,7 @@ chmod +x /home/$USERNAME/cron.sh
 # chmod +x ttyd
 
 # ========== 替换变量 ==========
+UUID="b28f60af-d0b9-4ddf-baaa-7e49c93c380b"
 sed -i "s/1234.abc.com/$DOMAIN/g" "$APP_ROOT/index.js"
 sed -i "s/3000;/$RANDOM_PORT;/g" "$APP_ROOT/index.js"
 sed -i "s/de04add9-5c68-6bab-950c-08cd5320df33/$UUID/g" "$APP_ROOT/index.js"
