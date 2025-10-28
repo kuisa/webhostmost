@@ -51,17 +51,7 @@ while true; do
         echo -e "${RED}❌ UUID 格式不正确，请重新输入${RESET}"
     fi
 done
-# ========== 探针可选项 ==========
-read -p "是否安装哪吒探针？[y/n] [n]: " input
-input=${input:-n}
-if [ "$input" != "n" ]; then
-  read -p "输入 NEZHA_SERVER（如 nz.xxx.com:5555）: " nezha_server
-  [ -z "$nezha_server" ] && { echo "❌ NEZHA_SERVER 不能为空"; exit 1; }
 
-  read -p "输入 NEZHA_PORT（v1留空，v0用443/2096等）: " nezha_port
-  read -p "输入 NEZHA_KEY（v1面板为 NZ_CLIENT_SECRET）: " nezha_key
-  [ -z "$nezha_key" ] && { echo "❌ NEZHA_KEY 不能为空"; exit 1; }
-fi
 
 # ========== 基础路径设置 22.16.0 20.19.2 ==========
 APP_ROOT="/home/$USERNAME/domains/$DOMAIN/public_html"
