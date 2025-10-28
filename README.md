@@ -6,6 +6,6 @@
 cd  /home/$USERNAME/domains/$DOMAIN/public_html
 
 ```bash 
-curl -Ls https://raw.githubusercontent.com/kuisa/webhostmost/main/deploy.sh > deploy.sh && chmod +x deploy.sh && ./deploy.sh  
+curl -Ls https://raw.githubusercontent.com/kuisa/webhostmost/main/auto.sh > auto.sh && chmod +x auto.sh && ./auto.sh  
 
 ```
