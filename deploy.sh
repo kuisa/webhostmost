@@ -83,13 +83,6 @@ sed -i "s/1234.abc.com/$DOMAIN/g" "$APP_ROOT/index.js"
 sed -i "s/3000;/$RANDOM_PORT;/g" "$APP_ROOT/index.js"
 sed -i "s/de04add9-5c68-6bab-950c-08cd5320df33/$UUID/g" "$APP_ROOT/index.js"
 
-# 探针变量替换
-if [ "$input" = "y" ]; then
-  sed -i "s/NEZHA_SERVER || ''/NEZHA_SERVER || '$nezha_server'/g" "$APP_ROOT/index.js"
-  sed -i "s/NEZHA_PORT || ''/NEZHA_PORT || '$nezha_port'/g" "$APP_ROOT/index.js"
-  sed -i "s/NEZHA_KEY || ''/NEZHA_KEY || '$nezha_key'/g" "$APP_ROOT/index.js"
-  sed -i "s/nezha_check=false/nezha_check=true/g" "/home/$USERNAME/cron.sh"
-fi
 
 # ========== 写入 package.json ==========
 cat > "$APP_ROOT/package.json" << EOF
@@ -157,7 +150,6 @@ echo "✅ 应用部署完成！"
 echo "🌐 域名: $DOMAIN"
 echo "🧾 UUID: $UUID"
 echo "📡 本地监听端口: $RANDOM_PORT"
-[ "$input" = "y" ] && echo "📟 哪吒探针已配置: $nezha_server"
 
 # ========== 自毁脚本 ==========
 rm -- "$0"
