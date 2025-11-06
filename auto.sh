@@ -33,26 +33,6 @@ if [ -z "$DOMAIN" ]; then
     mkdir -p "$DOMAIN_PATH"
 fi
 
-# ========== 第三步：输入或自动生成 UUID ==========
-while true; do
-    read -p "请输入 UUID（回车自动生成）: " UUID
-    if [ -z "$UUID" ]; then
-        if command -v uuidgen >/dev/null 2>&1; then
-            UUID=$(uuidgen)
-        else
-            UUID=$(cat /proc/sys/kernel/random/uuid)
-        fi
-        echo -e "${YELLOW}⚙️ 自动生成 UUID:${RESET} ${MAGENTA}$UUID${RESET}"
-        break
-    elif [[ "$UUID" =~ ^[a-fA-F0-9-]{36}$ ]]; then
-        echo -e "${CYAN}✅ 使用手动输入的 UUID: ${MAGENTA}$UUID${RESET}"
-        break
-    else
-        echo -e "${RED}❌ UUID 格式不正确，请重新输入${RESET}"
-    fi
-done
-
-
 # ========== 基础路径设置 22.16.0 20.19.2 ==========
 APP_ROOT="/home/$USERNAME/domains/$DOMAIN/public_html"
 NODE_VERSION="22.16.0"
@@ -139,18 +119,8 @@ echo "🧹 清理 npm 日志"
 [ -d "$LOG_DIR" ] && rm -f "$LOG_DIR"/*.log || echo "📂 无日志目录，跳过"
 
 
-# ========== 设置定时任务 ==========
-echo "⏱️ 写入 crontab 每分钟执行一次 cron.sh"
-echo "*/1 * * * * cd /home/$USERNAME/public_html && /home/$USERNAME/cron.sh" > ./mycron
-crontab ./mycron >/dev/null 2>&1
-rm ./mycron
-
 # ========== 结束提示 ==========
 echo "✅ 应用部署完成！"
 echo "🌐 域名: $DOMAIN"
 echo "🧾 UUID: $UUID"
 echo "📡 本地监听端口: $RANDOM_PORT"
-
-# ========== 自毁脚本 ==========
-rm -- "$0"
-
