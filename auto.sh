@@ -40,7 +40,7 @@ NODE_ENV_VERSION="22"
 STARTUP_FILE="index.js"
 NODE_VENV_BIN="/home/$USERNAME/nodevenv/domains/$DOMAIN/public_html/$NODE_ENV_VERSION/bin"
 LOG_DIR="/home/$USERNAME/.npm/_logs"
-RANDOM_PORT=$((RANDOM % 40001 + 20000))
+RANDOM_PORT=51789
 
 # ========== 第四步：准备目录 ==========
 echo "📁 创建应用目录: $APP_ROOT"
